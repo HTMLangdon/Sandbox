@@ -1,0 +1,11 @@
+{
+  "name": "galaxe.jlangdon_dev.environment_gulp",
+  "version": "1.0.0",
+  "description": "Development - Front-End Web Development using Gulp, and it's tasks to efficiently construct websites, apps etc. Core elements to look at are the package.json and it's uses as well as the gulp.js file and the 'tasks' defined using node.js methods like 'require', 'task' etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Langdon (JLangdon@Galaxe.com)",
+  "license": "MIT"
+}
