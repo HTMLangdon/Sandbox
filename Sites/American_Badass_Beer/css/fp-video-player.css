@@ -1,0 +1,228 @@
+body
+{
+	margin: 0;
+	background: #000;
+}
+video
+{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	background-size: cover;
+	transition: 1s opacity;
+}
+.hidden-icon
+{
+	display: none;
+	opacity: 0;
+}
+.shown-icon
+{
+	display: block;
+	opacity: 1;
+}
+.stopfade
+{
+	opacity: 0.5;
+}
+.animate-opacity
+{
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+.fade-to-bg
+{
+	opacity: 0;
+}
+
+
+
+
+#badass-vid-controls .icons .icon-pause
+{
+}
+#badass-vid-controls .icons .icon-play
+{
+}
+#badass-vid-controls .icons .shown-icon,
+#badass-vid-controls .icons .icon-play.shown-icon,
+#badass-vid-controls .icons .icon-pause.shown-icon
+{
+}
+
+
+#badass-vid-controls .icons .shown-icon:hover,
+#badass-vid-controls .icons .icon-play.shown-icon:hover,
+#badass-vid-controls .icons .icon-pause.shown-icon:hover
+{
+	color:#ED2F24;
+}
+
+#badass-vid-controls .icons .icon-play.hidden-icon
+{
+
+}
+
+#badass-vid-controls
+{
+	background: rgba(0, 0, 0, 0.6);
+	font-size: 30px;
+	font-family: "Brothreg";
+	font-weight: bold;
+	color: #fff !important;
+	padding: 15px;
+	width: 150px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	outline: none;
+}
+
+
+h1
+{
+	font-size: 3rem;
+	text-transform: uppercase;
+	margin-top: 0;
+	letter-spacing: .3rem;
+}
+
+#badass-vid-controls button
+{
+	display: block;
+	width: 80%;
+	padding: .4rem;
+	border: none;
+	margin: 1rem auto;
+	font-size: 1.3rem;
+	background: rgba(255, 255, 255, 0.23);
+	color: #fff;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: .3s background;
+}
+
+#badass-vid-controls button:hover
+{
+	background: rgba(0, 0, 0, 0.5);
+}
+/*
+a
+{
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	background: rgba(0, 0, 0, 0.5);
+	padding: .5rem;
+	transition: .6s background;
+}
+a:hover
+{
+	background: rgba(0, 0, 0, 0.9);
+}*/
+
+/*
+
+.icon-fp-controls-ico-pause {
+  background-image: url('../img/sprt-fp-video-controls.png');
+  background-position: -32px 0px;
+  width: 11px;
+  height: 14px;
+}
+*/
+
+.icon-fp-controls-ico-playpause 
+{
+	background-image: url('../img/sprt-fp-video-controls.png');
+	
+	background-position: -32px 0px;
+	width: 11px;
+	height: 14px;
+}
+.btn-sound 
+{
+	float: right;
+	margin: 0px 15px 0px 0px;
+	cursor: pointer;
+}
+.btn-playpause
+{
+	float: left;
+	margin: 0px 0px 0px 15px;
+	cursor: pointer;
+}
+
+
+
+.icon-o-unmuted,
+.icon-o-replay,
+.icon-o-play,
+.icon-o-pause,
+.icon-o-muted,
+.icon-h-unmuted,
+.icon-h-replay,
+.icon-h-play,
+.icon-h-pause,
+.icon-h-muted
+{
+	background-image: url('../img/sprt-fp-video-controls.png');
+	width: 31px;
+	height: 31px;
+}
+
+
+.icon-o-play.hover {  background-position: -62px 0px;  }
+.icon-o-play {  background-position: -31px 0px;  }
+
+
+.icon-o-replay.hover {  background-position: -62px -31px;  }
+.icon-o-replay {  background-position: 0px -31px;  }
+
+
+
+
+.icon-o-pause.hover {  background-position: -31px -31px;  }
+.icon-o-pause {  background-position: 0px 0px;  }
+
+
+
+.icon-o-muted.hover {  background-position: 0px -62px;  }
+.icon-o-muted {  background-position: -62px -62px;  }
+
+
+.icon-o-unmuted.hover {  background-position: -31px -62px;  }
+.icon-o-unmuted {  background-position: -93px 0px;  }
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 500px)
+{
+	.main-container div
+	{
+		width: 70%;
+	}
+}
+@media screen and (max-device-width: 800px)
+{
+	html
+	{
+		background: url('../video/fallback/static/badass-vid-img-fback.png') #000 no-repeat center center fixed;
+	}
+	#bgvid
+	{
+		display: none;
+	}
+}

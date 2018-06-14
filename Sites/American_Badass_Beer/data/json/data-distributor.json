@@ -1,0 +1,283 @@
+{
+	"items":[
+
+		{
+			"title": "Bottle Cap Magnet",
+			"type": "SWAG",
+			"specs": false,
+			"itemID": "BA100",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-1_Bottle-Cap-Magnet.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-1_Bottle-Cap-Magnet.jpg"
+		},
+
+		{
+			"title": "Keychain Bottle Opener",
+			"type": "SWAG",
+			"specs": "(Black)",
+			"itemID": "BA105",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-2_Black-Keychain.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-2_Black-Keychain.jpg"
+		},
+
+		{
+			"title": "Keychain Bottle Opener",
+			"type": "SWAG",
+			"specs": "(Silver)",
+			"itemID": "BA105",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-3_Metal-Keychain.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-3_Metal-Keychain.jpg"
+		},
+
+		{
+			"title": "Speed Bottle Opener",
+			"type": "SWAG",
+			"specs": false,
+			"itemID": "BA312",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-4_Bottle-Opener.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-4_Bottle-Opener.jpg"
+		},
+
+		{
+			"title": "Metal Sign",
+			"type": "SWAG",
+			"specs": "(11.5 in. wide)",
+			"itemID": "BA111",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-5_Metal-Sign.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-5_Metal-Sign.jpg"
+		},
+
+		{
+			"title": "Party Beads",
+			"type": "SWAG",
+			"specs": false,
+			"itemID": "BA302",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-6_Beads.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-6_Beads.jpg"
+		},
+
+		{
+			"title": "Bandana",
+			"type": "SWAG",
+			"specs": false,
+			"itemID": "BA304",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-7_Bandana.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-7_Bandana.jpg"
+		},
+
+		{
+			"title": "Fathead Teammate",
+			"type": "SWAG",
+			"specs": "(10 in. wide)",
+			"itemID": "BA308",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-8_Fathead.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-8_Fathead.jpg"
+		},
+
+		{
+			"title": "Beer Koozie",
+			"type": "SWAG",
+			"specs": false,
+			"itemID": "BA106",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-9_Koozie.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-9_Koozie.jpg"
+		},
+
+		{
+			"title": "Mirror Small",
+			"type": "SWAG",
+			"specs": "(14 in. x 12 in.)",
+			"itemID": "BA217",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-10_Small-Mirror.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-10_Small-Mirror.jpg"
+		},
+
+		{
+			"title": "Mirror Large",
+			"type": "Poster",
+			"specs": "(28 in. x 24 in.)",
+			"itemID": "BA217",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-11_Large-Mirror.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-11_Large-Mirror.jpg"
+		},
+
+		{
+			"title": "Mancave Sign",
+			"type": "POSTER",
+			"specs": false,
+			"itemID": "BA217",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-12_Man-Cave-Sign.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-12_Man-Cave-Sign.jpg"
+		},
+
+		{
+			"title": "Men's ''TGIFF'' Tee Shirt",
+			"type": "APPAREL",
+			"specs": "(sizes S-2XL)",
+			"itemID": "BAMS002",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-13_TGIFF.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-13_TGIFF-ab.jpg"
+		},
+
+		{
+			"title": "Women's ''You Wanna Taste'' Tee Shirt",
+			"type": "APPAREL",
+			"specs": "(sizes S-2XL)",
+			"itemID": "BAWS001",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-14_You-Wanna-Taste.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-14_You-Wanna-Taste-ab.jpg"
+		},
+
+		{
+			"title": "Men's Dickies Button Up Work Shirt",
+			"type": "APPAREL",
+			"specs": "(sizes S-3XL)",
+			"itemID": "BAMW001",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-15_DIckies.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-15_DIckies-ab.jpg"
+		},
+
+		{
+			"title": "Men's ''Promo'' Tee Shirt", 
+			"type": "APPAREL",
+			"specs": "(sizes S-L)",
+			"itemID": "BAMS001",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-16_Promo.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-16_Promo.jpg"
+		},
+
+		{
+			"title": "Denim Jacket Black With Red",
+			"type": "APPAREL_NOALT",
+			"specs": "(sizes S-4XL)",
+			"itemID": "MJ150",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-17_Denim-Jacket.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-17_Denim-Jacket.jpg"
+		},
+
+		{
+			"title": "Snowflake Ornament",
+			"type": "SWAG",
+			"specs": "(2.75 in.)",
+			"itemID": "AC304",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-18_Snowflake.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-18_Snowflake.jpg"
+		},
+
+		{
+			"title": "Small Sticker",
+			"type": "SWAG",
+			"specs": false,
+			"itemID": "AC206",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-19_Sticker.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-19_Sticker.jpg"
+		},
+
+		{
+			"title": "Lapel Pin",
+			"type": "SWAG",
+			"specs": "(1 in. wide)",
+			"itemID": "BA118",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-20_Lapel-Pin.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-20_Lapel-Pin.jpg"
+		},
+
+		{
+			"title": "Rectangle Patch",
+			"type": "SWAG",
+			"specs": false,
+			"itemID": "BA200",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-21_Rectangular-Patch.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-21_Rectangular-Patch.jpg"
+		},
+
+		{
+			"title": "Oval Patch",
+			"type": "SWAG",
+			"specs": false,
+			"itemID": "BA200",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-22_Oval-Patch.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-22_Oval-Patch.jpg"
+		},
+
+		{
+			"title": "Round Magnet",
+			"type": "SWAG",
+			"specs": "(3.25 in. wide)",
+			"itemID": "BA203",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-23_Magnet.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-23_Magnet.jpg"
+		},
+
+		{
+			"title": "Round Sticker",
+			"type": "SWAG",
+			"specs": "(4 in. wide)",
+			"itemID": "BA206",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-24_Round-Sticker.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-24_Round-Sticker.jpg"
+		},
+
+		{
+			"title": "License Plate Frame",
+			"type": "SWAG",
+			"specs": false,
+			"itemID": "BA309",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-25_License-Plate.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-25_License-Plate.jpg"
+		},
+
+		{
+			"title": "Bumper Sticker",
+			"type": "SWAG",
+			"specs": false,
+			"itemID": "BA206",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-26_Bumper-Sticker.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-26_Bumper-Sticker.jpg"
+		},
+
+		{
+			"title": "Pint Glass",
+			"type": "SWAG",
+			"specs": false,
+			"itemID": "GLP108",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-27_Pint-Glass.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-27_Pint-Glass.jpg"
+		},
+
+		{
+			"title": "Shot Glass",
+			"type": "SWAG",
+			"specs": false,
+			"itemID": "GLS108",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-28_Shot-Glass.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-28_Shot-Glass.jpg"
+		},
+
+		{
+			"title": "Stainless Steel Hip Flask",
+			"type": "SWAG",
+			"specs": false,
+			"itemID": "BA599",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-29_Flask.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-29_Flask.jpg"
+		},
+
+		{
+			"title": "Flag",
+			"type": "POSTER",
+			"specs": "(3 ft. x 5 ft.)",
+			"itemID": "AC195",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-30_Flag.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-30_Flag.jpg"
+		},
+
+		{
+			"title": "Postcards",
+			"type": "SWAG",
+			"specs": false,
+			"itemID": "AC191",
+			"iconURL": "http://www.uadw.com/BadassBeer/pre-production/img/distributor/icons/distributor-icon-31_Postcards.jpg",
+			"largeURL": "img/distributor/large/distributor-icon-31_Postcards.jpg"
+		}
+	]
+}

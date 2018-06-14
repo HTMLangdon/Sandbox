@@ -1,0 +1,20 @@
+<div class="social-feed-element {{? !it.moderation_passed}}hidden{{?}}" dt-create="{{=it.dt_create}}" social-feed-id="{{=it.id}}">
+	<div class='content'>
+		<a class="author-picture-container" href="{{=it.author_link}}" target="_blank">
+			<img class="author-picture" style="min-height:none;" src="{{=it.author_picture}}">
+		</a>
+
+		<div class="social-feed-info">
+			<i class="author-post-date-{{=it.social_network}}"></i>
+			<span class="author-title">{{=it.author_name}}</span>
+			<span class="author-post-date"> {{=it.time_ago}}</span>
+		</div>
+		
+		<div class="social-feed-body">
+			<div class='body-text'>
+				<p class="social-feed-text">{{=it.text}} <a href="{{=it.link}}" target="_blank" class="btn-read-more">read more</a></p>
+			</div>
+		</div>
+	</div>
+	{{=it.attachment}}
+</div>
