@@ -1,0 +1,392 @@
+@import "settings";
+@import "foundation-emails";
+@import "template/template";
+body {
+  .container {
+    .wrapper {
+      &.header-content {
+        .header-content-container {
+          .background-host {
+            .email-content-main-header {
+              padding-top: 20px !important;
+            }
+            .email-content-sub-header {
+              padding-bottom: 20px !important;
+            }
+            h1 {
+              // padding-top: 20px;
+            }
+            h2 {
+              // padding-bottom: 20px;
+            }
+          }
+        }
+      }
+      &.header-branding {
+        .top-right-cell {
+          th {
+            text-align: right;
+            padding-right: 9%;
+            a {
+              color: $dark-gray;
+              font-weight: bold;
+            }
+          }
+        }
+      }
+      &.main-content {
+        .introduction {
+          font-weight: bold;
+          padding: 35px 0px;
+        }
+        h1,
+        h2,
+        h3 {
+          font-weight: bold;
+          padding: 25px 0 10px 0;
+        }
+      }
+      &.contact-info {
+        p.signature {
+          font-weight: bold !important;
+        }
+      }
+      &.footer {
+        min-height: 80px; // td {
+        //   vertical-align: middle;
+        .wrapper-inner {
+          vertical-align: middle;
+        }
+      }
+      &.sub-footer {
+        // padding-top:20px;
+      }
+      th.columns {
+        padding-bottom: 0px;
+      }
+    }
+  }
+
+  &.PlainBlue {
+    .wrapper {
+      &.header-branding {
+        background-color: $StandardBlue;
+        .columns {
+          &.top-right-cell {
+            a {
+              &.branding-contact {
+                color: $white;
+              }
+            }
+          }
+        }
+      }
+      &.main-content {
+        .row {
+          .columns {
+            p {
+              &.main-txt {
+                padding:10px 0px;
+              }
+            }
+          }
+        }
+      }
+
+      &.footer {
+        background-color: $StandardBlue;
+        .row {
+          .columns {
+            p {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+
+    //mostly for scenario-b.html:
+    .container {
+      &.header-unique.plainblue {
+        .wrapper {
+          background-color: $StandardBlue;
+          #plainblue-headings {
+            padding: 0px 0px 25px 0px;
+            h1 {
+              font-size: 25px !important;
+            }
+            h2 {
+              font-size: $global-font-size !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  &.Aqua {
+    .header-content {
+      .header-content-container {
+        .background-host {
+          background: url("../assets/img/slices/slice_design--bg-questionMark-aqua.jpg");
+          background-repeat: repeat-x;
+        }
+      }
+    }
+    .container {
+      .wrapper {
+        &.main-content {
+          h1,
+          h2,
+          h3 {
+            color: $Aqua !important;
+          }
+          ul.main-txt-list {
+            padding: 0px 0px 0px 20px;
+            li {
+            }
+          }
+          .row {
+            &.cell-container {
+              &.bgc-blue {
+                .columns {
+                  background-color: $Aqua;
+                  p.cell-data {
+                    color: $white !important;
+                  }
+                }
+              }
+              &.bgc-white {
+                .columns {
+                  background-color: $white;
+                }
+              }
+              &.bgc-lt-gray {
+                .columns {
+                  background-color: $light-gray;
+                }
+              }
+              .columns {
+                &.cell-column {
+                  &.small-3 {
+                    display: table-cell !important;
+                  }
+                  vertical-align: middle;
+                  padding-top: 10px;
+                  border-right: 1px solid $dark-gray;
+                  border-top: 1px solid $dark-gray;
+                  &.first {
+                    border-left: 1px solid $dark-gray;
+                    p {
+                      &.cell-data {
+                        font-weight: bold;
+                      }
+                    }
+                  }
+                  &.last {
+                  }
+                  &.add-border--bottom {
+                    border-bottom: 1px solid $dark-gray;
+                  }
+                  p {
+                    &.cell-data {
+                      text-align: center;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+        &.contact-info {
+          .wrapper-inner {
+            padding-left: 0px;
+            .columns {
+              padding-left: 0px;
+            }
+          }
+          .row {
+            &.farewell-line {
+              .columns {
+                p.signature {
+                  color: $Aqua !important;
+                }
+              }
+            }
+          }
+        }
+        &.footer {
+          background-color: $Aqua;
+          p {
+            color: $white !important;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  &.HunterGreen {
+    .header-content {
+      .header-content-container {
+        .background-host {
+          background: url("../assets/img/slices/slice_design--bg-graduationCap-htrGreen.jpg");
+          background-repeat: repeat-x;
+        }
+      }
+    }
+    .container {
+      .wrapper {
+        &.main-content {
+          h1,
+          h2,
+          h3 {
+            color: $HunterGreen !important;
+          }
+        }
+        &.contact-info {
+          p.signature {
+            color: $HunterGreen !important;
+          }
+        }
+        &.footer {
+          background-color: $HunterGreen;
+          p {
+            color: $white !important;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  &.PeaGreen {
+    .header-content {
+      .header-content-container {
+        .background-host {
+          background: url("../assets/img/slices/slice_design--bg-phone-pGreen.jpg");
+          background-repeat: repeat-x;
+        }
+      }
+    }
+    .container {
+      .wrapper {
+        &.main-content {
+          h1,
+          h2,
+          h3 {
+            color: $PeaGreen !important;
+          }
+        }
+        &.contact-info {
+          p.signature {
+            color: $PeaGreen !important;
+          }
+        }
+        &.footer {
+          background-color: $PeaGreen;
+          p {
+            color: $white !important;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  &.CreamsicleOrange {
+    .header-content {
+      .header-content-container {
+        .background-host {
+          background: url("../assets/img/slices/slice_design--bg-camera-csOrange.jpg");
+          background-repeat: repeat-x;
+        }
+      }
+    }
+    .container {
+      .wrapper {
+        &.main-content {
+          h1,
+          h2,
+          h3 {
+            color: $CreamsicleOrange !important;
+          }
+        }
+        &.contact-info {
+          p.signature {
+            color: $CreamsicleOrange !important;
+          }
+        }
+        &.footer {
+          background-color: $CreamsicleOrange;
+          p {
+            color: $white !important;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  &.Turquoise {
+    .header-content {
+      .header-content-container {
+        .background-host {
+          background: url("../assets/img/slices/slice_design--bg-diamond-turquoise.jpg");
+          background-repeat: repeat-x;
+        }
+      }
+    }
+    .container {
+      .wrapper {
+        &.main-content {
+          h1,
+          h2,
+          h3 {
+            color: $Turquoise !important;
+          }
+        }
+        &.contact-info {
+          p.signature {
+            color: $Turquoise !important;
+          }
+        }
+        &.footer {
+          background-color: $Turquoise;
+          p {
+            color: $white !important;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+  &.Perrywinkle {
+    .header-content {
+      .header-content-container {
+        .background-host {
+          background: url("../assets/img/slices/slice_design--bg-magnifyingGlass-perrywinkle.jpg");
+          background-repeat: repeat-x;
+        }
+      }
+    }
+    .container {
+      .wrapper {
+        &.main-content {
+          h1,
+          h2,
+          h3 {
+            color: $Perrywinkle !important;
+          }
+        }
+        &.contact-info {
+          p.signature {
+            color: $Perrywinkle !important;
+          }
+        }
+        &.footer {
+          background-color: $Perrywinkle;
+          p {
+            color: $white !important;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}

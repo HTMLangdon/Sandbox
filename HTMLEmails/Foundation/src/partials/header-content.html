@@ -1,0 +1,51 @@
+<!-- header-b -->
+<!-- header - content -->
+<!--  -->
+<!-- fluid header, scaling with min width -->
+<container>
+  <wrapper class="header-content">
+    <row class="collapse">
+      <columns small="12" large="12" valign="middle">
+        <table class="header-content-container" cellpadding="0" cellspacing="0" border="0" height="" width="">
+          <tr>
+            <td class="background-host" valign="top">
+              <!--[if gte mso 9]>
+              <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;height:92px;">
+                <v:fill type="tile" src="https://i.imgur.com/YJOX1PC.png" color="#7bceeb" />
+                <v:textbox inset="0,0,0,0">
+              <![endif]-->
+              <div>
+
+                {{#if pageHasEmptyH2}}
+
+                <spacer size="20"></spacer>
+                {{else}}
+                <spacer size="1"></spacer>
+                {{/if}}
+                <h1 class="email-content-main-header text-center collapse">
+                  {{header-content-h1}}
+                </h1>
+
+                {{#if pageHasEmptyH2}}
+                  <h2 class="email-content-sub-header text-center collapse">
+                  </h2>
+                  <spacer size="20"></spacer>
+                {{else}}
+                  <h2 class="email-content-sub-header text-center collapse">
+                    {{header-content-h2}}
+                  </h2>
+                  <spacer size="1"></spacer>
+                {{/if}}
+
+              </div>
+              <!--[if gte mso 9]>
+              </v:textbox>
+            </v:rect>
+            <![endif]-->
+            </td>
+          </tr>
+        </table>
+      </columns>
+    </row>
+  </wrapper>
+</container>

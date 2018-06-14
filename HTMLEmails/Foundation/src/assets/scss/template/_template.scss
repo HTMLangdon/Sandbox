@@ -1,0 +1,43 @@
+// These are the styles to make some of the templates look extra nice.
+// Feel free to remove these styles for production!
+
+// Body Styles 
+body,
+html, 
+.body {
+  background: #ffffff !important;
+}
+body,.body,.container{
+  background: #ffffff !important;
+}
+.container.header {
+  background: transparent;
+}
+
+
+
+// Full Width Headers
+.header {
+  background: transparent;
+}
+
+.header .columns {
+  padding-bottom: 0;
+}
+
+.header p {
+  color: #fff;
+  padding-top: 15px;
+}
+
+.header .wrapper-inner {
+  padding: 20px;
+}
+
+.header .container {
+  background: transparent;
+}
+
+.wrapper.secondary {
+  background: #f3f3f3;
+}

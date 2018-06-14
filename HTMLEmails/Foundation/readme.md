@@ -1,7 +1,3 @@
-
-John Langdon
-
-
 Created using Foundation for Emails
 
 For more information visit:
