@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="node_modules/chart.js/dist/Chart.js"></script>
+    <script type="text/javascript" src="node_modules/chart.piecelabel.js/src/Chart.PieChartColumnLabels.js"></script>
+
+    <script type="text/javascript" src="node_modules/jquery/dist/jquery.js"></script>
+</head>
+
+<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    canvas#pieChart-ReverseMortgage {}
+
+</style>
+
+<body>
+
+    <main id="content-container">
+        <div class="chart-container">
+            <canvas id="pieChart-ReverseMortgage" width="1100" height="500"></canvas>
+        </div>
+    </main>
+
+</body>
+
+<script>
+    /// canvas element context
+    var canvasContext = null;
+    /*
+    <values the chart.js chart should populate>
+    /// pieChart - chart.js should populate...*/
+    var pieChart_ReverseMortgage = null;
+
+    var angle_start = 0;
+    var angle_end = Math.PI * 2;
+    var canvasElement = null;
+    // </end vals the chart.js chart should populate>
+
+    var ElementPoints = {
+        "angle": {
+            pointA: 0,
+            pointB: 0,
+            median: 0
+
+        },
+        "line": {
+            x1: 0,
+            y1: 0,
+            x2: 0,
+            y2: 0
+        },
+        "label": {
+            x1: 0,
+            y1: 0,
+            x2: 0,
+            y2: 0
+        }
+    }
+
+    /*
+    grid : <Array> -- populated @ each index an 
+                      object three with properties:
+                      
+                grid[0].quadrant   == number
+                grid[0].start      == number 
+                grid[0].end        == number
+
+    cartesian grid and the range of angle values 
+    (in degrees) for each quadrant
+    
+    */
+    var grid = [{
+        quadrant: 1,
+        start: 0,
+        end: 90
+    }, {
+        quadrant: 2,
+        start: 90,
+        end: 180
+    }, {
+        quadrant: 3,
+        start: 180,
+        end: 270
+    }, {
+        quadrant: 4,
+        start: 270,
+        end: 360
+    }];
+
+
+
+    $(document).ready(function(e) {
+        //        createCircle();
+        //        createLine();
+        //        createLabel();
+        createChart();
+    })
+
+    /*
+    function createCircle () : void
+        -- creates the reference circle in order for the label(s) to have the correct coordinates 
+        -- may not be necessary in chart.js - this function should be replaced with the coordinates created when a chart has been generated.
+    */
+    /* function createCircle() {
+         //        startX = radius;
+         //        startY = radius;
+         canvasElement = document.getElementById("pieChart-ReverseMortgage")
+         canvasElement.width = 500;
+         canvasElement.height = 500;
+         startX = canvasElement.width / 2;
+         startY = canvasElement.height / 2;
+         canvasContext = document.getElementById("pieChart-ReverseMortgage").getContext('2d');
+         canvasContext.lineWidth = 1.5;
+         canvasContext.strokeStyle = '#FFA500';
+         canvasContext.beginPath();
+         canvasContext.arc(startX, startY, radius, angle_start, angle_end, false); // Outer circle
+         //        canvasContext.closePath();
+         canvasContext.stroke();
+         canvasContext.lineWidth = 2.5;
+         canvasContext.strokeStyle = '#00FF00';
+
+         //Math.PI*2 / 8    ==   45 Degrees
+         //Math.PI*2 / 16 =     ==   22.5 Degrees
+
+
+     }*/
+
+
+
+    function getBrowserUsed($browserName) {
+        var __browserName = $browswerName.toLowerCase().split(" ").join("").split("-").join("");
+        var __status = new Object({
+            browser: null,
+            inUse: false
+        });
+        switch (__browserName) {
+            case "opera":
+                // Opera 8.0+
+                __status.browser = "opera";
+                __status.inUse = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+                break;
+            case "firefox":
+                // Firefox 1.0+
+                __status.browser = "firefox";
+                __status.inUse = typeof InstallTrigger !== 'undefined';
+                break;
+            case "safari":
+                // Safari 3.0+ "[object HTMLElementConstructor]" 
+                __status.browser = "safari";
+                __status.inUse = /constructor/i.test(window.HTMLElement) || (function(p) {
+                    return p.toString() === "[object SafariRemoteNotification]";
+                })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+                break;
+            case "ie":
+                // Internet Explorer 6-11
+                __status.browser = "ie"
+                __status.inUse = /*@cc_on!@*/ false || !!document.documentMode;
+                break;
+            case "edge":
+                // Edge 20+
+                __status.browser = "edge"
+                __status.inUse = !isIE && !!window.StyleMedia;
+                break;
+            case "chrome":
+                // Chrome 1+
+                __status.browser = "chrome";
+                __status.inUse = !!window.chrome && !!window.chrome.webstore;
+                break;
+            case "blinky":
+                // Blink engine detection
+                __status.browser = "blinky";
+                __status.inUse = (isChrome || isOpera) && !!window.CSS;
+            default:
+                console.log("ruh-roh... maybe is some seweht speshow bwowsah.");
+        }
+    }
+    window.onbeforeprint = function(e) {
+        console.log('-= ON BEFORE PRINT EVENT HANDLER CALLED =-');
+    };
+    window.onafterprint = function(e) {
+        console.log('-= ON AFTER PRINT EVENT HANDLER CALLED =-');
+    }
+
+    var d = [
+        20000,
+        4000,
+        5500,
+        48960,
+        26140,
+        94400
+
+    ];
+
+    var bgRGB = [
+
+        'rgba(242, 158, 51, 1)',
+        'rgba(188, 47, 45, 1)',
+        'rgba(27, 71, 103, 1)',
+        'rgba(58, 132, 188, 1)',
+        'rgba(100, 0, 98, 1)',
+        'rgba(172, 152, 49, 1)'
+    ];
+
+    var ltxt = [
+        "$20,000\nMonthly Mortgage Balance",
+        "$4,000\nInsurance Fees ",
+        "$5,500\nFinancing Fees",
+        "$48,960\nEquity Reserves",
+        "$26,140\nCash at Close",
+        "$94,400\nLine of Credit"
+
+    ];
+
+
+    var bdRGB = [
+        'rgba(255, 255, 255, 1)',
+        'rgba(255, 255, 255, 1)',
+        'rgba(255, 255, 255, 1)',
+        'rgba(255, 255, 255, 1)',
+        'rgba(255, 255, 255, 1)',
+        'rgba(255, 255, 255, 1)'
+
+    ];
+
+    function createChart() {
+        canvasContext = document.getElementById("pieChart-ReverseMortgage").getContext('2d');
+        pieChart_ReverseMortgage = new Chart(canvasContext, {
+            type: 'pie',
+            data: {
+                labels: [
+                    ltxt[0],
+                    ltxt[1],
+                    ltxt[2],
+                    ltxt[3],
+                    ltxt[4],
+                    ltxt[5],
+                ],
+                datasets: [{
+
+                    data: [
+                        d[0],
+                        d[1],
+                        d[2],
+                        d[3],
+                        d[4],
+                        d[5]
+                    ],
+                    backgroundColor: [
+                        bgRGB[0],
+                        bgRGB[1],
+                        bgRGB[2],
+                        bgRGB[3],
+                        bgRGB[4],
+                        bgRGB[5]
+                    ],
+                    borderColor: [
+                        bdRGB[0],
+                        bdRGB[1],
+                        bdRGB[2],
+                        bdRGB[3],
+                        bdRGB[4],
+                        bdRGB[5]
+                    ],
+                    borderWidth: 3,
+
+                }]
+            },
+            options: {
+                showDatapoints: true,
+                layout: {
+                    padding: {
+                        top: 100,
+                        bottom: 100
+                    }
+                },
+                legend: {
+                    display: false
+                },
+                title: {
+                    display: true
+                },
+                animation: {
+                    duration: 0
+                },
+                //Setting Options For the PieChart Labels:
+                pieChartLabel: {
+                    columnOffset: 40,
+                    lineInset: 10,
+                    legA: {
+                        length: 1,
+                        thickness: 2,
+                        color: "green"
+                    },
+                    outerLabel: {
+                        //labelPadding: 10,
+                        fontSize: 12,
+                        fontFamily: "Arial",
+                        color: "0X00FF0F"
+                    }
+                },
+                scales: {
+                    yAxes: [{
+                        display: false,
+                        gridLines: {
+                            display: false
+                        }
+                    }],
+                    yAxes: [{
+                        display: false,
+                        gridLines: {
+                            display: false
+                        },
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                },
+                events:[]
+            }
+        });
+
+    }
+
+</script>
+
+</html>
